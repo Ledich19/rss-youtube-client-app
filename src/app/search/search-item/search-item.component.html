@@ -21,5 +21,14 @@
   </div>
 
   <button type="button" class="video__button" (click)="details = !details">more...</button>
-  <div *ngIf="details" class="video__line"></div>
+  <!-- *ngIf="details" -->
+  <div
+    [ngClass]="{
+      grin: videoAgeInDays > 6 * 30,
+      blue: videoAgeInDays < 7,
+      red: videoAgeInDays < 30,
+      yellow: videoAgeInDays < 6 * 30,
+    }"
+    class="video__line"
+  ></div>
 </div>

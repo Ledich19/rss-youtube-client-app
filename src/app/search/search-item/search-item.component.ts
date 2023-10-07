@@ -24,4 +24,16 @@ export default class SearchItemComponent {
   faHeartCircleMinus = faHeartCircleMinus;
 
   faWindowRestore = faWindowRestore;
+
+  get videoAgeInDays(): number {
+    const videoDate = new Date(this.video.snippet.publishedAt);
+    const currentDate = new Date();
+    const sixMonthsAgo = new Date();
+    sixMonthsAgo.setMonth(currentDate.getMonth() - 6);
+
+    const diffInMilliseconds = currentDate.getTime() - videoDate.getTime();
+    const diffInDays = Math.floor(diffInMilliseconds / (1000 * 3600 * 24));
+
+    return diffInDays;
+  }
 }
