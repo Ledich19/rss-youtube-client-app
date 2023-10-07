@@ -1,1 +1,25 @@
-<p>search-item works!</p>
+<div class="video">
+  <div class="video__wrapper">
+    <div class="video__preview">
+      <img [src]="video.snippet.thumbnails.medium.url" alt="" />
+    </div>
+    <div class="video__statistics">
+      <div class="video__info">
+        <fa-icon [icon]="faEye"> </fa-icon>{{ video.statistics.viewCount }}
+      </div>
+      <div class="video__info">
+        <fa-icon [icon]="faHeart"> </fa-icon>{{ video.statistics.likeCount }}
+      </div>
+      <div class="video__info">
+        <fa-icon [icon]="faHeartCircleMinus"></fa-icon>{{ video.statistics.dislikeCount }}
+      </div>
+      <div class="video__info">
+        <fa-icon [icon]="faWindowRestore"></fa-icon>{{ video.statistics.commentCount }}
+      </div>
+    </div>
+    <div class="video__name">{{ video.snippet.title }}</div>
+  </div>
+
+  <button type="button" class="video__button" (click)="details = !details">more...</button>
+  <div *ngIf="details" class="video__line"></div>
+</div>

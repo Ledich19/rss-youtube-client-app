@@ -1,0 +1,31 @@
+.video__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 28px 0;
+  gap: 28px;
+  @media (max-width: 1200px) {
+    justify-content: space-around;
+  }
+  @media (max-width: 768px) {
+    justify-content: space-around;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: space-around;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 5px;
+  }
+}
