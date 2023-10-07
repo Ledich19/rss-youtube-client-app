@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 5px;
+  }
+}
+.header {
+  background: #dedede;
+  padding-bottom: 20px;
+  &__user {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+  }
+  &__top {
+    position: relative;
+  }
+  &__bottom {
+    position: relative;
+  }
+}

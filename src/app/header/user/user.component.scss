@@ -1,0 +1,28 @@
+.user {
+  display: flex;
+  align-items: center;
+  &__name {
+  }
+}
+.avatar {
+  height: 34px;
+  width: 34px;
+  border-radius: 8px;
+  background: #2f80ed;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &__icon {
+    color: #2f80ed;
+    font-size: 20px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+  }
+}

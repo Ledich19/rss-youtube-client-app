@@ -1,0 +1,39 @@
+.search {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  &__youTube {
+    font-size: 60px;
+    color: #2f80ed;
+    cursor: pointer;
+  }
+  &__field {
+  }
+  &__input {
+    box-sizing: border-box;
+    height: 24px;
+    border: none;
+    outline: none;
+  }
+  &__btn {
+    height: 24px;
+    border: none;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    background: #2f80ed;
+    cursor: pointer;
+  }
+  &__options {
+    border: none;
+    outline: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 5px;
+    color: white;
+    background: #2f80ed;
+    cursor: pointer;
+  }
+}

@@ -10,6 +10,7 @@ import UserComponent from './header/user/user.component';
 import SettingComponent from './header/setting/setting.component';
 import SearchComponent from './header/search/search.component';
 import FilteringComponent from './filtering/filtering.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import FilteringComponent from './filtering/filtering.component';
     SearchComponent,
     FilteringComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,19 @@
+.sort-by {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: grey;
+}
+.sort-by__list {
+  display: flex;
+  gap: 16px;
+}
+.sort-by__item {
+  color: #2f80ed;
+  text-decoration: underline;
+}
+.sort-by__input {
+  margin-left: 10px;
+  outline: none;
+  border: none;
+}
