@@ -28,3 +28,26 @@
     position: relative;
   }
 }
+.search {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  &__youTube {
+    font-size: 60px;
+    color: #2f80ed;
+    cursor: pointer;
+  }
+
+  &__options {
+    border: none;
+    outline: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 5px;
+    color: white;
+    background: #2f80ed;
+    cursor: pointer;
+  }
+}

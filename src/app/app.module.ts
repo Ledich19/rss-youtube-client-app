@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import AppRoutingModule from './app-routing.module';
 import AppComponent from './app.component';
@@ -10,7 +11,6 @@ import UserComponent from './header/user/user.component';
 import SettingComponent from './header/setting/setting.component';
 import SearchComponent from './header/search/search.component';
 import FilteringComponent from './filtering/filtering.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
