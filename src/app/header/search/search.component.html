@@ -1,4 +1,9 @@
 <div class="search__field">
-  <input type="text" class="search__input" placeholder="What are you looking for?" />
+  <input
+    type="text"
+    class="search__input"
+    placeholder="What are you looking for?"
+    [(ngModel)]="searchValue"
+  />
   <button type="submit" class="search__btn">search</button>
 </div>
